@@ -1,0 +1,139 @@
+/*  =============================================================================
+    HTML5 Boilerplate CSS: h5bp.com/css
+    ========================================================================== */
+
+	article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
+	audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
+	audio:not([controls]) { display: none; }
+	[hidden] { display: none; }
+	html { font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+	html, button, input, select, textarea { font-family: Arial, Helvetica, sans-serif; color: #666; }
+	body { margin: 0; font-size: 12px; line-height: 1.4; }
+	::-moz-selection { background: #666; color: #fff; text-shadow: none; }
+	::selection { background: #666; color: #fff; text-shadow: none; }
+	a { color: #fff; }
+	a:visited { color: #fff; }
+	a:hover { color: #fff; }
+	a:focus {  }
+	a:hover, a:active, a:focus { outline: 0; }
+	abbr[title] { border-bottom: 1px dotted; }
+	b, strong { font-weight: bold; }
+	blockquote { margin: 1em 40px; }
+	dfn { font-style: italic; }
+	hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+	ins { background: #ff9; color: #000; text-decoration: none; }
+	mark { background: #ff0; color: #000; font-style: italic; font-weight: bold; }
+	pre, code, kbd, samp { font-family: monospace, serif; _font-family: 'courier new', monospace; font-size: 1em; }
+	pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
+	q { quotes: none; }
+	q:before, q:after { content: ""; content: none; }
+	small { font-size: 85%; }
+	sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+	sup { top: -0.5em; }
+	sub { bottom: -0.25em; }
+	ul, ol { margin: 1em 0; padding: 0 0 0 40px; }
+	dd { margin: 0 0 0 40px; }
+	nav ul, nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0; }
+	img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; }
+	svg:not(:root) { overflow: hidden; }
+	figure { margin: 0; }
+	form { margin: 0; }
+	fieldset { border: 0; margin: 0; padding: 0; }
+	label { cursor: pointer; }
+	legend { border: 0; *margin-left: -7px; padding: 0; white-space: normal; }
+	button, input, select, textarea { font-size: 100%; margin: 0; vertical-align: baseline; *vertical-align: middle; }
+	button, input { line-height: normal; }
+	button, input[type="button"], input[type="reset"], input[type="submit"] { cursor: pointer; -webkit-appearance: button; *overflow: visible; }
+	button[disabled], input[disabled] { cursor: default; }
+	input[type="checkbox"], input[type="radio"] { box-sizing: border-box; padding: 0; *width: 13px; *height: 13px; }
+	input[type="search"] { -webkit-appearance: textfield; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; }
+	input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-search-cancel-button { -webkit-appearance: none; }
+	button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
+	textarea { overflow: auto; vertical-align: top; resize: vertical; }
+	input:valid, textarea:valid {  }
+	input:invalid, textarea:invalid { background-color: #f0dddd; }
+	table { border-collapse: collapse; border-spacing: 0; }
+	td { vertical-align: top; }
+	.chromeframe { margin: 0.2em 0; background: #ccc; color: black; padding: 0.2em 0; }
+	
+	@font-face {
+        font-family: 'Londrina';
+        src: url('../font/londrinasolidregular.eot');
+        src: url('../font/londrinasolidregular.eot?#iefix') format('embedded-opentype'),
+             url('../font/londrinasolidregular.woff') format('woff'),
+             url('../font/londrinasolidregular.ttf') format('truetype'),
+             url('../font/londrinasolidregular.svg#LondrinaSolidRegular') format('svg');
+        font-weight: normal;
+        font-style: normal;
+    }
+    @font-face {
+        font-family: 'Pacifico';
+        src: url('../font/pacifico.eot');
+        src: url('../font/pacifico.eot?#iefix') format('embedded-opentype'),
+             url('../font/pacifico.woff') format('woff'),
+             url('../font/pacifico.ttf') format('truetype'),
+             url('../font/pacifico.svg#PacificoRegular') format('svg');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+
+/*  ===== Primary Styles ========================================================
+    Author: Unomena
+    ========================================================================== */
+
+    .clouds_container { width: 100%; clear: both; position: relative; z-index: 2; }
+    .clouds_top { width: 100%; height: 433px; display: block; background: url('../img/clouds_top.png') top center no-repeat; position: absolute; top: 0; left: 0; right: 0; z-index: 1; }
+    .clouds_bottom { width: 100%; height: 699px; display: block; background: url('../img/clouds_bottom.png') top center no-repeat; position: absolute; bottom: 0; left: 0; right: 0; z-index: 1; }
+    .hands { width: 100%; height: 78px; display: block; background: url('../img/hands.png') top center no-repeat; position: absolute; top: 492px; left: 0; right: 0; z-index: 1; }
+
+    /* GLOBAL */
+    html, body { background: #262c3c url('../img/pattern.jpg') repeat; }
+    #wrap { width: 800px; margin: 0 auto; z-index: 3; }
+    #container { position: relative; z-index: 3; }
+
+    
+    /* HELPERS */
+    .align_left { float: left; }
+    .align_right { float: right; }
+
+     /* FOOTER */
+    header { width: 800px; height: 300px; float: left; position: relative; text-align: center; z-index: 3; }
+        .logo { width: 234px; height: 209px; display: block; background: url('../img/logo.png') center no-repeat; margin: 0 auto; position: absolute; top: 38px; left: 0; right: 0; overflow: hidden; text-indent: -999px; }
+        header h1 { width: 720px; margin: 0 auto; padding: 118px 0 0 0; font-family: Londrina, Arial, Helvetica, sans-serif; font-size: 17px; font-weight: normal; color: #fff; text-transform: uppercase; }
+        header h1 .align_right { padding: 0 10px 0 0; }
+
+     /* FOOTER */
+    footer { width: 800px; float: left; margin: 30px 0 195px 0; text-align: center; z-index: 3; }
+        footer .credits { margin: 0 0 15px 0; font-family: Londrina, Arial, Helvetica, sans-serif; font-size: 20px; font-weight: normal; color: #fff; text-transform: uppercase; }
+        footer .legal { margin: 0 0 15px 0; font-family: Londrina, Arial, Helvetica, sans-serif; font-size: 30px; font-weight: normal; color: #eadc35; text-transform: uppercase; }
+        footer .logo_bottom { width: 49px; height: 49px; display: block; margin: 0 auto; background: url('../img/logo_bottom.png') no-repeat; }
+        footer a { text-decoration: none; color: #54bce1!important; }
+
+    /* CONTENT */
+    .main { width: 800px; float: left; z-index: 3; }
+        .main .welcome { width: 800px; height: 289px; float: left; margin: 0; padding: 0; background: url('../img/welcome.png') center no-repeat; overflow: hidden; text-indent: -999px; }
+        .main .subtitle { width: 800px; float: left; margin: 0; padding: 40px 0; text-align: center; font-family: Londrina, Arial, Helvetica, sans-serif; font-size: 31px; font-weight: normal; color: #eadc35; text-transform: uppercase; }
+        .main .divider { width: 800px; height: 10px; float: left; background: url('../img/divider.png') center no-repeat; }
+        .main .dates { width: 800px; height: 149px; float: left; margin: 30px 0 0 0; background: url('../img/dates.png') center no-repeat; font-family: Pacifico, Arial, Helvetica, sans-serif; font-size: 44px; font-weight: normal; color: #fff; text-align: center; line-height: 54px; }
+        .main .interest { width: 800px; float: left; margin: 49px 0 0 0; }
+            .main .register { width: 323px; height: 271px; float: left; margin: 0 0 0 40px; background: url('../img/register.png') no-repeat; overflow: hidden; text-indent: -999px; }
+            .main .speaker { width: 335px; height: 276px; float: right; margin: 0 40px 0 0; background: url('../img/speaker.png') no-repeat; overflow: hidden; text-indent: -999px; }
+        .main .divider_double { width: 800px; height: 20px; float: left; margin: 34px 0 0 0; background: url('../img/divider_double.png') center no-repeat; }
+   
+    /* POPUPS */
+    .pop_register { width: 490px; height: auto; padding: 50px 0px; margin: 0 auto; display: block; background: #262c3c url('../img/pattern.jpg') repeat; position: fixed; top: 50px; left: 0; right: 0; z-index: 100px; border: 15px solid #fff; -webkit-box-shadow: 1px 1px 2px 0px #000; box-shadow: 1px 1px 2px 0px #000; display: none; }
+        .pop_close { width: 52px; height: 53px; display: block; position: absolute; top: -30px; right: -30px; background: url('../img/pop_close.png') no-repeat; }
+        .pop_title { font-family: Londrina, Arial, Helvetica, sans-serif; font-size: 25px; font-weight: normal; color: #54bce1; text-align: center; line-height: 28px; }
+        .pop_sub { font-family: Londrina, Arial, Helvetica, sans-serif; font-size: 72px; font-weight: normal; color: #eadc35; text-align: center; line-height: 75px; }
+        .pop_intro { padding: 20px 0; font-size: 14px; font-weight: bold; color: #fff; text-align: center; }
+        .field { width: 392px; height: 44px; margin: 0 auto 10px auto; display: block; background: url('../img/field.png') no-repeat; }
+        .field label { width: 120px; float: left; padding: 8px 0 0 10px; font-size: 14px; font-weight: bold; color: #252b3b; text-align: left; }
+        .field input { width: 230px; float: left; padding: 5px; margin: 5px 0 0 0; border: 0; font-size: 14px; color: #252b3b; }
+        .text { width: 388px; height: 149px; margin: 0 auto 10px auto; display: block; background: url('../img/text.png') no-repeat; }
+        .text label { width: 220px; float: left; padding: 8px 0 0 10px; font-size: 14px; font-weight: bold; color: #252b3b; text-align: left; }
+        .text textarea { width: 353px; height: 90px; float: left; padding: 5px; margin: 5px 8px 8px 6px; border: 0; font-size: 14px; color: #252b3b; }
+        .btns { width: 384px; display: block; margin: 5px auto; }
+        .btns .align_left { text-align: left; margin: 0; font-weight: bold; color: #fff; }
+        .btns .align_left a { color: #eadc35; text-decoration: none; }
+        .btns input { width: 159px; height: 55px; float: right; display: block; border: 0; background: url('../img/btn_sign_up.png') no-repeat; overflow: hidden; text-indent: -999px; }
