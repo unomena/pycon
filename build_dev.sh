@@ -1,7 +1,7 @@
 #!/bin/bash
 
-PROJECT_NAME = pycon
-PROJECT_TYPE = dev
+PROJECT_NAME=pycon
+PROJECT_TYPE=dev
 
 python bootstrap.py
 bin/buildout \
