@@ -1,0 +1,17 @@
+.pydevproject
+.project
+*.pyc
+*.pyo
+/bin/
+/develop-eggs/
+/eggs/
+/parts/
+*.egg-info
+/logs/
+*.sqlite
+/.installed.cfg
+/static/
+/supervisor/
+/nginx/
+/media/
+settings_local.py
