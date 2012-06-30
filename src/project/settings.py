@@ -17,6 +17,14 @@ ADMINS = (
     ('Unomena Developers', 'dev@unomena.com'),
 )
 
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'unomena.mailman@gmail.com'
+EMAIL_HOST_PASSWORD = 'r?e*nK(b8O1'
+EMAIL_PORT = 587
+
+DEFAULT_FROM_EMAIL = 'unomena.mailman@gmail.com'
+
 MANAGERS = ADMINS
 
 DATABASES = {
