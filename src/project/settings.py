@@ -10,7 +10,7 @@ PROJECT_NAME = 'pycon'
 
 TEMPLATES_PATH = os.path.join(BUILDOUT_PATH, "src", PROJECT_NAME, "templates")
 
-DEBUG = True
+DEBUG = False
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
