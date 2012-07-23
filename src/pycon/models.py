@@ -11,7 +11,7 @@ class AttendeeRegistration(models.Model):
     
     name = models.CharField(max_length=128)
     email = models.EmailField()
-    comments = models.TextField()
+    comments = models.TextField(null=True, blank=True)
     timestamp = models.DateTimeField(auto_now_add=True)
     
     def __str__(self):
@@ -22,7 +22,7 @@ class SpeakerRegistration(models.Model):
     
     name = models.CharField(max_length=128)
     email = models.EmailField()
-    comments = models.TextField()
+    comments = models.TextField(null=True, blank=True)
     timestamp = models.DateTimeField(auto_now_add=True)
     
     def __str__(self):
