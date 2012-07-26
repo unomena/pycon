@@ -1,0 +1,63 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html class="no-js ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="no-js ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="no-js ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> 
+<html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>PyCon ZA 2012</title>
+    <meta name="description" content="PyConZA - Python Developers Conference South Africa" />
+	<link rel="stylesheet" href="{{ STATIC_URL }}pycon/css/style.css">
+	<script src="{{ STATIC_URL }}pycon/js/libs/modernizr-2.5.3.min.js"></script>
+</head>
+<body>
+<!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+
+<div class="clouds_top"></div>
+<div class="hands"></div>
+
+<div id="wrap">
+<div id="container">
+
+	<header>
+        <a href="/" class="logo">PyCon ZA 2012</a>
+        <h1><span class="align_left">National Conference for Users of</span><span class="align_right">The Python Programming Language</span></h1>
+        {% comment %}        
+            {% include "pycon/includes/form_register.html" %}
+            {% include "pycon/includes/form_speaker.html" %}
+        {% endcomment %}
+    </header><!--/Header-->
+	
+	<div class="main" role="main">
+	
+        <h3 class="subtitle">Oops. Something went wrong.<br /><br />Our engineers are furiously working<br />to get the issues resolved.<br /><br /></h3>
+
+        <div class="divider_double"></div>
+        
+	</div><!--/Main-->
+	
+	<footer>
+        <div class="credits">Pycon ZA brought to you by <a href="http://www.praekeltfoundation.org/" target="_blank">Praekelt Foundation</a><br />Website by <a href="http://unomena.com/" target="_blank">Unomena</a></div>
+        <div class="legal">&copy; 2012 PyCon ZA Conference</div>
+        <a href="/" class="logo_bottom"></a>
+	</footer><!--/Footer-->
+	
+</div><!--/CONTAINER-->
+</div><!--/WRAP-->
+<div class="clouds_container">
+    <div class="clouds_bottom"></div>
+</div><!--/clouds-->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="{{ STATIC_URL }}pycon/js/libs/jquery-1.7.2.min.js"><\/script>')</script>
+<script src="{{ STATIC_URL }}pycon/js/libs/jquery.colorbox.js"></script>
+<script src="{{ STATIC_URL }}pycon/js/script.js"></script>
+<script>
+	var _gaq=[['_setAccount','UA-33514784-1'],['_trackPageview']];
+	(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+	g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+	s.parentNode.insertBefore(g,s)}(document,'script'));
+</script>
+</body>
+</html>
