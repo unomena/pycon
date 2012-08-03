@@ -140,13 +140,13 @@
         div.anythingSlider { position: relative; float: right; }
         /* anythingSlider base UL */
         ul.anythingBase { background: transparent; list-style: none; position: absolute; top: 0; left: 0; margin: 0; padding: 0; }
-        ul.anythingBase li { position: relative; }
         ul.anythingBase li { background: transparent; display: block; float: left; padding: 0; margin: 0; position: relative; }
         ul.anythingBase li img { position: absolute; top: 0; left: 0; z-index: 1; }
         ul.anythingBase li div { width: 520px; padding: 34px 0 0 360px; position: relative; z-index: 2; }
-        ul.anythingBase li div h1 { padding: 0; margin: 0; font-family: 'Londrina Solid', cursive; font-size: 60px; font-weight: normal; color: #54bce1; text-transform: uppercase; line-height: 60px; }
+        ul.anythingBase li div h1 { background: transparent; padding: 0; margin: 0; font-family: 'Londrina Solid', cursive; font-size: 60px; font-weight: normal; color: #54bce1; text-transform: uppercase; line-height: 60px; }
         ul.anythingBase li div h2 { margin: 10px 0; font-family: 'Oswald', sans-serif; font-size: 20px; font-weight: normal; color: #fff; text-transform: uppercase; line-height: 28px; }
         ul.anythingBase li div .btn_promo_about { width: 174px; height: 28px; padding: 2px 0 5px 10px; display: inline-block; background: url('../img/btn_promo_about.png') no-repeat; font-family: 'Londrina Solid', cursive; font-size: 26px; font-weight: normal; color: #1a1f29; text-transform: uppercase; text-decoration: none; }
+        ul.anythingBase li div.promo_venue { width: 420px; padding: 34px 0 0 460px; position: relative; z-index: 2; }
         /* navigation arrows */
         div.anythingSlider .arrow { top: 38%; position: absolute; display: block; z-index: 2; }
         div.anythingSlider .arrow a { display: block; height: 84px; margin: 0; width: 30px; text-align: center; outline: 0; }
