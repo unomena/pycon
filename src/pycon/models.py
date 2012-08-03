@@ -31,7 +31,7 @@ class SpeakerRegistration(models.Model):
     contact_number = models.CharField(max_length=16, null=True, blank=True)
     comments = models.TextField(null=True, blank=True)
     bio = models.TextField(null=True)
-    photo = models.ImageField(upload_to='speaker-photos', null=True)
+    photo = models.ImageField(upload_to='media/speaker-photos', null=True)
     timestamp = models.DateTimeField(auto_now_add=True)
     
     talk_title = models.CharField(max_length=128, null=True)
