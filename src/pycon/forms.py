@@ -31,8 +31,8 @@ class SpeakerRegistrationForm(forms.ModelForm):
         
         self.base_fields['name'].widget.attrs.update({'class' : 'required', 'tabindex' : 1})
         self.base_fields['surname'].widget.attrs.update({'class' : 'required', 'tabindex' : 2})
-        self.base_fields['contact_number'].widget.attrs.update({'tabindex' : 3})
-        self.base_fields['email'].widget.attrs.update({'class' : 'required email', 'tabindex' : 4})
+        self.base_fields['contact_number'].widget.attrs.update({'tabindex' : 5})
+        self.base_fields['email'].widget.attrs.update({'class' : 'required email', 'tabindex' : 3})
         self.base_fields['bio'].widget.attrs.update({'class' : 'required', 'tabindex' : 5})
         self.base_fields['photo'].widget.attrs.update({'class' : 'required', 'tabindex' : 6})
         
