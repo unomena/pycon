@@ -51,7 +51,7 @@ class SpeakerRegistration(models.Model):
 def post_registartion_save(sender, instance, created, **kwargs):
     if created:
         send_mail('PyCon ZA 2012', 
-                  'Thanks for showing your interest.  We\'ll get in touch shortly',
+                  'Thanks for showing your interest.  We\'ll get in touch shortly.',
                   settings.DEFAULT_FROM_EMAIL,
                   [instance.email], 
                   fail_silently=True)
