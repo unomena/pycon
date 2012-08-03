@@ -67,16 +67,16 @@ urlpatterns = patterns('',
         {'template' : 'pycon/register_thanks.html'}, 
         name='register_thanks'),
                        
-#    url(r'^speaker.html$',
-#        generic_views.CreateView.as_view(model=models.SpeakerRegistration,
-#                                         template_name='pycon/speaker.html',
-#                                         success_url='/speaker_thanks.html'),
-#        name='speaker'),
-#                       
-#    url(r'^speaker_thanks.html$',
-#        simple_views.direct_to_template, 
-#        {'template' : 'pycon/speaker_thanks.html'}, 
-#        name='speaker_thanks'),
+    url(r'^speaker.html$',
+        generic_views.CreateView.as_view(form_class=forms.SpeakerRegistrationForm,
+                                         template_name='pycon/speaker.html',
+                                         success_url='/speaker_thanks.html'),
+        name='speaker'),
+                       
+    url(r'^speaker_thanks.html$',
+        simple_views.direct_to_template, 
+        {'template' : 'pycon/speaker_thanks.html'}, 
+        name='speaker_thanks'),
 
 # Old URL's
 

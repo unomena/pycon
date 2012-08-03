@@ -7,26 +7,26 @@
                 <div class="inner">
                     <h2>Fill in the form below to apply to be a speaker</h2>
                     <p>Fields marked * are required.</p>
-                    <form id="frmSpeaker" action="thanks_speaker.html" method="post">
+                    <form id="frmSpeaker" action="{% url speaker %}" method="post" enctype="multipart/form-data">{% csrf_token %}
                         <fieldset>
                             <legend>Your Contact Info</legend>
                             <div class="fieldgroup">
                                 <div class="field">
                                     <label for="first_name">Name <span>*</span></label>
-                                    <input type="text" id="first_name" name="first_name" value="" class="required" tabindex="1" />
+                                    {{ form.name }}
                                 </div>
                                 <div class="field">
                                     <label for="last_name">Surname <span>*</span></label>
-                                    <input type="text" id="last_name" name="last_name" value="" class="required" tabindex="2" />
+                                    {{ form.surname }}
                                 </div>
                                 <div class="clear"></div>
                                 <div class="field">
                                     <label for="contact_number">Contact Number</label>
-                                    <input type="text" id="contact_number" name="contact_number" value="" tabindex="4" />
+                                    {{ form.contact_number }}
                                 </div>
                                 <div class="field">
                                     <label for="email_address">Email Address <span>*</span></label>
-                                    <input type="text" id="email_address" name="email_address" value="" class="required email" tabindex="3" />
+                                    {{ form.email }}
                                 </div>
                                 
                             </div>
@@ -36,11 +36,11 @@
                             <div class="fieldgroup">
                                 <div class="fieldlong">
                                     <label for="bio">Bio <span>*</span></label>
-                                    <textarea id="bio" name="bio" class="required" tabindex="5"></textarea>
+                                    {{ form.bio }}
                                 </div>
                                 <div class="field align_left">
                                     <label for="photo">Photo <span>*</span></label>
-                                    <input type="file" id="photo" name="photo" value="" tabindex="6" />
+                                    {{ form.photo }}
                                 </div>
                             </div>
                         </fieldset>
@@ -49,47 +49,37 @@
                             <div class="fieldgroup">
                                 <div class="field">
                                     <label for="talk_title">Title <span>*</span></label>
-                                    <input type="text" id="talk_title" name="talk_title" value="" class="required" tabindex="7" />
+                                    {{ form.talk_title }}
                                 </div>
                                 <div class="field">
                                     <label for="talk_kind">Kind <span>*</span></label>
-                                    <select id="talk_kind" name="talk_kind" class="required" tabindex="8">
-                                        <option value="" selected="selected">--- Please Select ---</option>
-                                        <option value="talk">Talk (30 minutes + 10 for questions)</option>
-                                        <option value="keynote">Keynote (50 minutes + 10 for questions)</option>
-                                        <option value="tut">Tutorial (90 minutes)</option>
-                                    </select>
+                                    {{ form.talk_type }}
                                 </div>
                                 <div class="clear"></div>
                                 <div class="field">
                                     <label for="talk_category">Category <span>*</span></label>
-                                    <input type="text" id="talk_category" name="talk_category" value="" class="required" tabindex="10" />
+                                    {{ form.talk_category }}
                                 </div>
                                 <div class="field">
                                     <label for="talk_audience">Audience Level <span>*</span></label>
-                                    <select id="talk_audience" name="talk_audience" class="required" tabindex="9">
-                                        <option value="" selected="selected">--- Please Select ---</option>
-                                        <option value="beg">Beginner</option>
-                                        <option value="int">Intermediate</option>
-                                        <option value="adv">Advanced</option>
-                                    </select>
+                                    {{ form.talk_level }}
                                 </div>
                                 <div class="clear"></div>
                                 <div class="field">
                                     <label for="talk_duration">Duration <span>*</span></label>
-                                    <input type="text" id="talk_duration" name="talk_duration" value="" class="required" tabindex="11" />
+                                    {{ form.talk_duration }}
                                 </div>
                                 <div class="fieldlong">
                                     <label for="talk_desc">Description <span>*</span></label>
-                                    <textarea id="talk_desc" name="talk_desc" class="required" tabindex="12"></textarea>
+                                    {{ form.talk_description }}
                                 </div>
                                 <div class="fieldlong">
                                     <label for="talk_abstract">Abstract <span>*</span></label>
-                                    <textarea id="talk_abstract" name="talk_abstract" class="required" tabindex="13"></textarea>
+                                    {{ form.talk_abstract }}
                                 </div>
                                 <div class="fieldlong">
                                     <label for="talk_notes">Additional Notes for Reviewers <span>*</span></label>
-                                    <textarea id="talk_notes" name="talk_notes" class="required" tabindex="14"></textarea>
+                                    {{ form.talk_notes }}
                                 </div>
                             </div>
                         </fieldset>

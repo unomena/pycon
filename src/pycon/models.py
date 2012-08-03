@@ -26,9 +26,23 @@ class AttendeeRegistration(models.Model):
 class SpeakerRegistration(models.Model):
     
     name = models.CharField(max_length=128)
+    surname = models.CharField(max_length=128, null=True)
     email = models.EmailField()
+    contact_number = models.CharField(max_length=16, null=True, blank=True)
     comments = models.TextField(null=True, blank=True)
+    bio = models.TextField(null=True)
+    photo = models.ImageField(upload_to='speaker-photos', null=True)
     timestamp = models.DateTimeField(auto_now_add=True)
+    
+    talk_title = models.CharField(max_length=128, null=True)
+    talk_type = models.IntegerField(choices=constants.TALK_TYPES, null=True)
+    talk_level = models.IntegerField(choices=constants.TALK_LEVELS, null=True)
+    talk_category = models.CharField(max_length=64, null=True)
+    talk_duration = models.CharField(max_length=32, null=True)
+    talk_description = models.TextField(null=True)
+    talk_abstract = models.TextField(null=True)
+    talk_notes = models.TextField(null=True)
+    
     
     def __str__(self):
         return '%s (%s)' % (self.name, self.email)
