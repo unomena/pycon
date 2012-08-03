@@ -7,7 +7,10 @@
                 <div class="inner">
                     <h2>Fill in the form below to apply to be a speaker</h2>
                     <p>Fields marked * are required. Don't forget to register to attend!</p>
-                    <p>{{ form.errors }}</p>
+                    {% if form.errors %}
+                    <p>Some errors were found in the form -- please correct them and re-submit:</p>
+                    {{ form.errors }}
+                    {% endif %}
                     <form id="frmSpeaker" action="{% url speaker %}" method="post" enctype="multipart/form-data">{% csrf_token %}
                         <fieldset>
                             <legend>Your Contact Info</legend>
