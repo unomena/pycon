@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='pycon',
-    version='1.0.1',
+    version='1.0.3',
     description='PyCon ZA',
     author='Unomena Developers',
     author_email='dev@unomena.com',
@@ -16,6 +16,7 @@ setup(
         'python-memcached==1.48',
         'psycopg2==2.4.2',
         'flup',
+        'PIL',
     ],
     include_package_data=True,
 )
