@@ -66,11 +66,45 @@
 
         <div class="content wide">
             <div class="body">
-                <h1>Internal Server Error</h1>
+                <h1>Register</h1>
                 <div class="inner">
-                    <p>A server error has occurred.</p>
-                    <p>Our engineers have been notified and will address the problem as soon as possible.</p>
-                    <p>Please try again later.</p>
+                    <h2>Fill in the form below to register</h2>
+                    <p>Fields marked * are required.</p>
+                    <form id="frmRegister" action="thanks_register.html" method="post">
+                        <fieldset>
+                            <legend>Your Contact Info</legend>
+                            <div class="fieldgroup">
+                                <div class="field">
+                                    <label for="first_name">Name <span>*</span></label>
+                                    <input type="text" id="first_name" name="first_name" value="" class="required" tabindex="1" />
+                                </div>
+                                <div class="field">
+                                    <label for="last_name">Surname <span>*</span></label>
+                                    <input type="text" id="last_name" name="last_name" value="" class="required" tabindex="2" />
+                                </div>
+                                <div class="clear"></div>
+                                <div class="field">
+                                    <label for="email_address">Email Address <span>*</span></label>
+                                    <input type="text" id="email_address" name="email_address" value="" class="required email" tabindex="4" />
+                                </div>
+                                <div class="field">
+                                    <label for="contact_number">Contact Number</label>
+                                    <input type="text" id="contact_number" name="contact_number" value="" class="required" tabindex="3" />
+                                </div>
+                                <div class="clear"></div>
+                                <div class="field">
+                                    <label for="type">Registration Type <span>*</span></label>
+                                    <select id="type" name="type" class="required" tabindex="5">
+                                        <option value="" selected="selected">--- Please Select ---</option>
+                                        <option value="corp">Corporate (R1000)</option>
+                                        <option value="ind">Individual (R650)</option>
+                                        <option value="stud">Student (R250)</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <input type="submit" name="submit" value="Submit" class="btn" />
+                    </form>
                 </div>
             </div>
         </div><!--/content-->
