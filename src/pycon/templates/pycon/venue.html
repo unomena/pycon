@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block nav %}
+    {% with on='venue' %}
+        {% include "pycon/includes/nav.html" %}
+    {% endwith %}
+{% endblock %}
+
+{% block content %}
+        <div class="content wide">
+            <div class="body">
+                <h1>Where</h1>
+                <div class="inner">
+                    <div class="grid">
+                        <div class="block">
+                            <h2>Venue Information</h2>
+                            <p><strong>The Pavilion Clock Tower is situated within the Clock Tower in Cape Town's Victoria &amp; Alfred Waterfront</strong>, boasting venues with stunning views of the harbour and the perfect place for our first PyConZA conference.  We love this new venue and its green policy and PyConZA will be working closely with the venue to ensure that our event has the least impact on the environment possible.</p>
+                            <h2>Parking</h2>
+                            <p><strong>Clock Tower Parking Garage</strong> (Please provide your parking ticket at registration)</p>
+                            <p>At the intersection of Coen Steytler &amp; Buitengracht – Turn right (from the N1) into Coen Steytler towards the Waterfront.</p>
+                            <p>Drive past the Audi Garage &amp; the Caltex Garage</p>
+                            <p>At the Traffic Circle take the 3rd exit towards the Clock Tower</p>
+                            <p>1st Entrance to the left and follow the signage to the Underground Parking</p>
+                        </div>
+                        <div class="block">
+                            <h2>Map</h2>
+                            <p><iframe width="565" height="696" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=clock+tower,+cape+town&amp;hl=en&amp;sll=-33.908178,18.41933&amp;sspn=0.010934,0.01826&amp;hnear=Clock+Tower,+Cape+Town&amp;t=m&amp;ie=UTF8&amp;hq=&amp;z=14&amp;ll=-33.90645,18.422205&amp;output=embed"></iframe><br /><small><a href="https://maps.google.com/maps?q=clock+tower,+cape+town&amp;hl=en&amp;sll=-33.908178,18.41933&amp;sspn=0.010934,0.01826&amp;hnear=Clock+Tower,+Cape+Town&amp;t=m&amp;ie=UTF8&amp;hq=&amp;z=14&amp;ll=-33.90645,18.422205&amp;source=embed" style="color:#0000FF;text-align:left">View Larger Map</a></small></p>
+                        </div>
+                    </div>
+                    <div class="grid">
+                        <div class="block">
+                            <p><img src="{{ STATIC_URL }}pycon/img/venue_1.png" width="265" /></p>
+                        </div>
+                        <div class="block">
+                            <p><img src="{{ STATIC_URL }}pycon/img/venue.png" width="265" /></p>
+                        </div>
+                        <div class="block">
+                            <p><img src="{{ STATIC_URL }}pycon/img/venue_2.png" width="265" /></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!--/content-->
+{% endblock %}

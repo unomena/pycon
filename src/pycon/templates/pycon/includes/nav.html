@@ -1,0 +1,28 @@
+<nav>
+    <ul>
+        <li {% if on == 'home' %}class="on"{% endif %}><a href="index.html">Home</a></li>
+        <li class="has_nav {% if on == 'about' %}on{% endif %}">
+            <a href="about.html">About</a>
+            <ul>
+                <li><a href="about.html#about">About PyConZA</a></li>
+                <li><a href="about.html#info">Registration Info</a></li>
+                <li><a href="about.html#accommodation">Accommodation</a></li>
+                <li><a href="about.html#coc">Code of Conduct</a></li>
+            </ul>
+        </li>
+        <li {% if on == 'venue' %}class="on"{% endif %}><a href="venue.html">Venue</a></li>
+        <li {% if on == 'location' %}class="on"{% endif %}><a href="location.html">Location</a></li>
+        <li {% if on == 'schedule' %}class="on"{% endif %}><a href="schedule.html">Schedule</a></li>
+        <li class="has_nav {% if on == 'sponsors' %}on{% endif %}">
+            <a href="sponsors.html">Sponsors</a>
+            <ul>
+                <li><a href="sponsors.html">PyconZa Sponsors</a></li>
+                <li><a href="sponsors_packages.html">Become a Sponsor</a></li>
+            </ul>
+        </li>
+        <li {% if on == 'contact' %}class="on"{% endif %}><a href="contact.html">Contact</a></li>
+        <!--<li class="icon"><a href="http://pinterest.com/praekeltfound/" class="pinterest" target="_blank"></a></li>-->
+        <li class="icon"><a href="https://twitter.com/pyconza" class="twitter" target="_blank"></a></li>
+        <li class="icon"><a href="https://plus.google.com/u/0/events/c8jdopedaec40n30u78inbm4fj8/114736413252857807056" class="gplus" target="_blank"></a></li>
+    </ul>
+</nav><!--/Nav-->

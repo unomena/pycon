@@ -1,0 +1,73 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html class="no-js ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="no-js ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="no-js ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> 
+<html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>PyConZA 2012</title>
+    <meta name="description" content="PyConZA - Python Developers Conference South Africa" />
+    <meta property="og:title" content="PyConZA - Python Developers Conference South Africa" />
+    <meta property="og:description" content="The largest gathering in South Africa for the community using and developing the open-source Python programming language.">
+    <meta property="og:image" content="http://za.pycon.org/img/logo.png">
+    <meta name="author" content="Unomena - http://unomena.com/" />
+	<link rel="stylesheet" href="{{ STATIC_URL }}pycon/css/styling.css">
+    <link href='http://fonts.googleapis.com/css?family=Londrina+Solid|Pacifico|Oswald|PT+Sans' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" type="image/x-icon" href="{{ STATIC_URL }}pycon/img/favicon.ico" /> 
+	<script src="{{ STATIC_URL }}pycon/js/libs/modernizr-2.5.3.min.js"></script>
+</head>
+<body>
+<!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+
+<div class="clouds_top"></div>
+
+<div id="wrap">
+
+{% block nav %}
+    {% include "pycon/includes/nav.html" %}
+{% endblock %}
+
+<div id="container">
+	
+	<div class="main" role="main">
+	
+        <header>
+            <a href="index.html" class="logo">PyConZA 2012</a>
+            <div class="date">4 &amp; 5 October 2012<br /><span>Cape Town, South Africa</span></div>
+            <!--<div class="snakes"></div>-->
+            <a href="speaker.html" class="speaker">Would You Like To Be A<span>Speaker?</span></a>
+            <a href="register.html" class="register">Join Us! Click Here To<span>Register</span></a>
+        </header><!--/header-->
+
+        {% block content %}{% endblock %}
+	
+	<footer>
+        <div class="logos">
+            <a href="http://www.praekeltfoundation.org/"><img src="{{ STATIC_URL }}pycon/img/logo_pf.png" /></a>
+            <a href="http://www.google.co.za/"><img src="{{ STATIC_URL }}pycon/img/logo_google.png" /></a>
+            <a href="http://www.thoughtworks.com/"><img src="{{ STATIC_URL }}pycon/img/logo_thoughtworks.png" /></a>
+            <a href="http://unomena.com/"><img src="{{ STATIC_URL }}pycon/img/logo_unomena.png" /></a>
+        </div><!--/logos-->
+        <div class="legal">&copy; 2012 PyConZA Conference</div>
+        <div class="credits">PyConZA brought to you by <a href="http://www.praekeltfoundation.org/" target="_blank">Praekelt Foundation</a><br />Website by <a href="http://unomena.com/" target="_blank">Unomena</a></div>
+        <a href="/" class="logo_bottom"></a>
+	</footer><!--/Footer-->
+	
+</div><!--/CONTAINER-->
+</div><!--/WRAP-->
+<div class="clouds_container">
+    <div class="clouds_bottom"></div>
+</div><!--/clouds-->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="{{ STATIC_URL }}pycon/js/libs/jquery-1.7.2.min.js"><\/script>')</script>
+<script src="{{ STATIC_URL }}pycon/js/script.js"></script>
+<script>
+	var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+	(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+	g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+	s.parentNode.insertBefore(g,s)}(document,'script'));
+</script>
+</body>
+</html>

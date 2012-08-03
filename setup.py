@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='pycon',
-    version='0.0.1',
+    version='1.0.1',
     description='PyCon ZA',
     author='Unomena Developers',
     author_email='dev@unomena.com',
