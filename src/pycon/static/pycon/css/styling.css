@@ -8,7 +8,7 @@
 	[hidden] { display: none; }
 	html { font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
 	html, button, input, select, textarea { font-family: Arial, Helvetica, sans-serif; color: #666; }
-	body { margin: 0; font-size: 16px; line-height: 24px; }
+	body { margin: 0; font-size: 20px; line-height: 26px; }
 	::-moz-selection { background: #666; color: #fff; text-shadow: none; }
 	::selection { background: #666; color: #fff; text-shadow: none; }
 	a { color: #1a1f29; }
@@ -31,7 +31,7 @@
 	sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
 	sup { top: -0.5em; }
 	sub { bottom: -0.25em; }
-	ul, ol { margin: 1em 0; padding: 0 0 0 40px; }
+	ul, ol { margin: 1em 0; padding: 0 0 0 20px; }
 	dd { margin: 0 0 0 40px; }
 	nav ul, nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0; }
 	img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; }
@@ -188,7 +188,7 @@
     	.content { width: 700px; float: left; padding: 14px 0 0 0; position: relative; z-index: 5; background: url('../img/jagged_content_top.png') no-repeat; }
             .content .body { width: 680px; float: left; padding: 0 10px 10px 10px; background: #fff; }
     		.content .inner { width: 632px; float: left; padding: 14px 24px 24px 24px; font-family: PT Sans, sans-serif; }
-    		.content .inner h2 { margin: 30px 0 24px 0; font-family: 'Oswald', sans-serif; font-size: 20px; color: #1a1f29; text-transform: uppercase; line-height: 24px; }
+    		.content .inner h2 { margin: 30px 0 24px 0; font-family: 'Oswald', sans-serif; font-size: 22px; color: #1a1f29; text-transform: uppercase; line-height: 24px; }
             .content .item { width: 632px; float: left; margin: 0 0 20px 0; }
             .content .item .item_body { width: 296px; float: left; }
     	.sidebar { width: 220px; float: right; padding: 14px 0 0 0; position: relative; z-index: 5; background: url('../img/jagged_side_top.png') no-repeat; }
@@ -200,7 +200,7 @@
         .wide { width: 940px; float: left; padding: 14px 0 0 0; position: relative; z-index: 5; background: url('../img/jagged_wide_top.png') no-repeat; }
             .wide .body { width: 920px; float: left; padding: 0 10px 10px 10px; background: #fff; }
             .wide .inner { width: 872px; float: left; padding: 14px 24px 24px 24px; font-family: PT Sans, sans-serif; }
-            .wide .inner h2 { margin: 30px 0 24px 0; font-family: 'Oswald', sans-serif; font-size: 20px; color: #1a1f29; text-transform: uppercase; line-height: 24px; }
+            .wide .inner h2 { margin: 30px 0 24px 0; font-family: 'Oswald', sans-serif; font-size: 22px; color: #1a1f29; text-transform: uppercase; line-height: 26px; }
             .wide .item { width: 852px; float: left; margin: 0 0 20px 0; }
             .wide .grid { width: 872px; float: left; }
             .wide .grid .block { width: 270px; float: left; margin: 0 31px 10px 0; }
@@ -213,10 +213,10 @@
     table { width: 100%; }
         table tr { border-bottom: 2px solid #fff; }
         table th,
-        table td { padding: 8px 12px; text-align: left; border-right: 2px solid #fff; background: #dfe6ec; font-size: 14px; }
-        table td.title { background: #54bce1; font-family: 'Oswald', sans-serif; font-size: 14px; color: #1a1f29; text-transform: uppercase; line-height: 24px; }
+        table td { padding: 8px 12px; text-align: left; border-right: 2px solid #fff; background: #dfe6ec; font-size: 16px; }
+        table td.title { background: #54bce1; font-family: 'Oswald', sans-serif; font-size: 16px; color: #1a1f29; text-transform: uppercase; line-height: 26px; }
         table th { background: #e6d935; color: #181f29; font-weight: normal; vertical-align: top; }
-        table th span { font-family: 'Oswald', sans-serif; font-size: 16px; font-weight: bold; color: #1a1f29; text-transform: uppercase; line-height: 24px; }
+        table th span { font-family: 'Oswald', sans-serif; font-size: 16px; font-weight: bold; color: #1a1f29; text-transform: uppercase; line-height: 26px; }
 
     /* FORM */
     form { width: 872px; float: left; }
