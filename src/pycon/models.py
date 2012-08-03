@@ -19,8 +19,8 @@ class AttendeeRegistration(models.Model):
     comments = models.TextField(null=True, blank=True)
     timestamp = models.DateTimeField(auto_now_add=True)
     
-    def __str__(self):
-        return '%s (%s)' % (self.name, self.email)
+    def __unicode__(self):
+        return u'%s (%s)' % (self.name, self.email)
 
 
 class SpeakerRegistration(models.Model):
@@ -44,8 +44,8 @@ class SpeakerRegistration(models.Model):
     talk_notes = models.TextField(null=True)
     
     
-    def __str__(self):
-        return '%s (%s)' % (self.name, self.email)
+    def __unicode__(self):
+        return u'%s (%s)' % (self.name, self.email)
     
     
 def post_registartion_save(sender, instance, created, **kwargs):
