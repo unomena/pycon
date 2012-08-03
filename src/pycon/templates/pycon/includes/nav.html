@@ -13,7 +13,7 @@
         <li {% if on == 'schedule' %}class="on"{% endif %}><a href="schedule.html">Schedule</a></li>
         <li {% if on == 'venue' %}class="on"{% endif %}><a href="venue.html">Venue</a></li>
         <li {% if on == 'location' %}class="on"{% endif %}><a href="location.html">Location</a></li>
-        <li class="{% if on == 'sponsors' %}on{% endif %}"><a href="sponsors_packages.html">Sponsors</a></li>
+        <li {% if on == 'sponsors' %}class="on"{% endif %}><a href="sponsors_packages.html">Sponsors</a></li>
         <!--
         <li class="has_nav {% if on == 'sponsors' %}on{% endif %}">
             <a href="sponsors.html">Sponsors</a>
