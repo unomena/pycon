@@ -7,7 +7,7 @@ from django.conf.urls.defaults import patterns, include, url
 from django.views import generic as generic_views
 from django.views.generic import simple as simple_views
 
-from pycon import models
+from pycon import forms
 
 urlpatterns = patterns('',
 
@@ -55,6 +55,28 @@ urlpatterns = patterns('',
         simple_views.direct_to_template, 
         {'template' : 'pycon/contact.html'}, 
         name='contact'),
+                       
+    url(r'^register.html$',
+        generic_views.CreateView.as_view(form_class=forms.AttendeeRegistrationForm,
+                                         template_name='pycon/register.html',
+                                         success_url='/register_thanks.html'),
+        name='register'),
+                       
+    url(r'^register_thanks.html$',
+        simple_views.direct_to_template, 
+        {'template' : 'pycon/register_thanks.html'}, 
+        name='register_thanks'),
+                       
+#    url(r'^speaker.html$',
+#        generic_views.CreateView.as_view(model=models.SpeakerRegistration,
+#                                         template_name='pycon/speaker.html',
+#                                         success_url='/speaker_thanks.html'),
+#        name='speaker'),
+#                       
+#    url(r'^speaker_thanks.html$',
+#        simple_views.direct_to_template, 
+#        {'template' : 'pycon/speaker_thanks.html'}, 
+#        name='speaker_thanks'),
 
 # Old URL's
 
