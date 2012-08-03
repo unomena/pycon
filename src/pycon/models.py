@@ -7,10 +7,15 @@ from django.db import models
 from django.conf import settings
 from django.core.mail import send_mail
 
+from pycon import constants
+
 class AttendeeRegistration(models.Model):
     
     name = models.CharField(max_length=128)
+    surname = models.CharField(max_length=128, null=True)
     email = models.EmailField()
+    contact_number = models.CharField(max_length=16, null=True, blank=True)
+    registration_type = models.IntegerField(choices=constants.REGISTRATION_TYPES, null=True)
     comments = models.TextField(null=True, blank=True)
     timestamp = models.DateTimeField(auto_now_add=True)
     
