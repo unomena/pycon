@@ -46,15 +46,40 @@ class SpeakerRegistration(models.Model):
     
     def __unicode__(self):
         return u'%s (%s)' % (self.name, self.email)
-    
-    
-def post_registartion_save(sender, instance, created, **kwargs):
+
+
+def post_registartion_save(sender, template, instance, created, **kwargs):
     if created:
-        send_mail('PyCon ZA 2012', 
-                  'Thanks for showing your interest.  We\'ll get in touch shortly.',
+        send_mail('PyCon ZA 2012', template,
                   settings.DEFAULT_FROM_EMAIL,
-                  [instance.email], 
+                  [instance.email],
                   fail_silently=True)
 
-models.signals.post_save.connect(post_registartion_save, sender=AttendeeRegistration)
-models.signals.post_save.connect(post_registartion_save, sender=SpeakerRegistration)
+ATTENDEE_EMAIL = """
+Thank you for registering for PyCon ZA 2012.
+
+You can pay by EFT to the bank account below:
+
+  Account number: 9275706696
+  Branch code: 632005
+  Account name: PyCon Conference
+  Bank: ABSA
+  Reference: PyCon (plus attendee initials+last name)
+
+For assistance with registration and payment please contact
+Wendy Griffiths on +27 82 377 5913 or e-mail team@za.pycon.org.
+
+Looking forward to seeing you in October!
+""".strip()
+
+SPEAKER_EMAIL = """
+Thanks for showing your interest.
+We'll get in touch shortly.
+""".strip()
+
+models.signals.post_save.connect(post_registartion_save,
+                                 sender=AttendeeRegistration,
+                                 template=ATTENDEE_EMAIL)
+models.signals.post_save.connect(post_registartion_save,
+                                 sender=SpeakerRegistration,
+                                 template=SPEAKER_EMAIL)
